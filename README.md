@@ -23,3 +23,27 @@ AuthId_Steam2 参数确保返回的 SteamID 格式与之前一致
 [2025-08-27 14:35:42] 玩家退出 - 名称: Player1 | SteamID: STEAM_0:1:1234567 | IP: 192.168.1.100 | 原因: Disconnect
 
 [2025-08-27 14:40:15] 地图已切换至: c5m1_waterfront
+
+
+
+
+编译和安装说明
+编译插件: 使用 SourceMod 1.11 的编译器编译此文件
+
+
+安装插件:将编译生成的 l4d2_vote_kick_logger.smx 文件放入 addons/sourcemod/plugins 目录
+
+重启服务器或使用 sm plugins load l4d2_vote_kick_logger 命令加载插件
+
+功能说明
+自动记录: 插件会自动记录所有投票踢人事件到 addons/sourcemod/logs/vote_kick.log 文件
+详细信息: 每条记录包含:
+时间戳
+投票状态 (开始/通过/失败)
+发起者名称和Steam ID
+目标玩家名称和Steam ID
+投票原因
+
+查询功能: 管理员可以使用 !votekicklog 命令查看最近的10条投票记录
+
+地图分隔: 每次地图更换时会添加分隔符，便于区分不同地图的日志
