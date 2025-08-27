@@ -1,0 +1,21 @@
+功能说明
+
+自动记录: 插件会自动记录所有投票踢人事件到 addons/sourcemod/logs/vote_kick.log 文件
+
+详细信息: 每条记录包含:
+
+时间戳
+投票状态 (开始/通过/失败)
+发起者名称和Steam ID
+目标玩家名称和Steam ID
+投票原因
+
+查询功能: 管理员可以使用 !votekicklog 命令查看最近的10条投票记录
+
+地图分隔: 每次地图更换时会添加分隔符，便于区分不同地图的日志
+
+注意事项
+此代码专为 SourceMod 1.11 设计，使用了完全兼容的语法
+代码中使用了 GetClientAuthString 而不是新版本的 GetClientAuthId
+使用了传统的数组处理方式而不是新的 ArrayList
+所有函数都使用了正确的返回值类型声明
