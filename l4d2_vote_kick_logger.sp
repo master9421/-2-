@@ -11,7 +11,7 @@ new String:g_sVoteKickReason[MAXPLAYERS+1][256];
 public Plugin:myinfo = 
 {
     name = "L4D2投票踢人记录器",
-    author = "AI助手",
+    author = "Yourname",
     description = "记录游戏中的投票踢人事件",
     version = PLUGIN_VERSION,
     url = "https://github.com/YourName/l4d2-vote-kick-logger"
